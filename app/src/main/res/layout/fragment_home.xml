@@ -1,12 +1,25 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".HomeFragment">
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/Mywork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="My work"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/home"
+        app:layout_constraintTop_toBottomOf="@id/home" />
 
     <TextView
         android:id="@+id/home"
@@ -20,13 +33,22 @@
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <View
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/blacksquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/Mywork"
+        app:layout_constraintTop_toBottomOf="@id/Mywork" />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/shape_buttom"
         android:paddingStart="16dp"
         android:text="Search GitHub"
@@ -37,6 +59,260 @@
         app:layout_constraintStart_toStartOf="@id/home"
         app:layout_constraintTop_toBottomOf="@id/home" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottoms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="32dp"
+                android:id="@+id/Issues"
+                android:text="Issues"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Mywork">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="31dp"
+                android:text="PullRequest"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:id="@+id/PR"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Issues">
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="31dp"
+        android:text="Discussions"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:id="@+id/Discussions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PR">
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="31dp"
+        android:text="Repositories"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:id="@+id/Repositories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Discussions">
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="31dp"
+        android:text="Organizations"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:id="@+id/Organizations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Repositories">
+           <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="31dp"
+        android:text="Starred"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:id="@+id/Starred"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Organizations">
+
+    <ImageButton
+        android:id="@+id/bissues"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/background_buttom1"
+        android:src="@drawable/vector1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mywork" />
+    <ImageButton
+        android:id="@+id/bPR"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_buttom2"
+        android:src="@drawable/vector2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bissues" />
+    <ImageButton
+        android:id="@+id/bdiscussions"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_buttom3"
+        android:src="@drawable/vector_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bPR" />
+    <ImageButton
+        android:id="@+id/brepositories"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_bottom4"
+        android:src="@drawable/vector_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bdiscussions" />
+
+    <ImageButton
+        android:id="@+id/borganizations"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_buttom5"
+        android:src="@drawable/vector_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brepositories" />
+
+    <ImageButton
+        android:id="@+id/bstarred"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/background_buttom6"
+        android:src="@drawable/vector_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/borganizations"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mywork" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mywork" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mywork" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mywork" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="235dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mywork" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mywork">
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="64dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="279dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:src="@drawable/lignes"
+      android:id="@+id/ligne1"
+      android:background="@color/black2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ligne1"
+        android:src="@drawable/lignes"
+        android:id="@+id/ligne2"
+        android:background="@color/black2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ligne2"
+        android:src="@drawable/lignes"
+        android:id="@+id/ligne3"
+        android:background="@color/black2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ligne3"
+        android:src="@drawable/lignes"
+        android:id="@+id/ligne4"
+        android:background="@color/black2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ligne4"
+        android:src="@drawable/lignes"
+        android:id="@+id/ligne5"
+        android:background="@color/black2"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
+  </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
