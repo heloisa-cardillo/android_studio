@@ -11,4 +11,24 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="pullrequest">PullRequest</string>
+    <string name="repositories">Repositories</string>
+    <string name="organizations">Organizations</string>
+    <string name="starred">Starred</string>
+    <string name="discussions">Discussions</string>
+    <string name="issues">Issues</string>
+    <string name="search_github">Search GitHub</string>
+    <string name="my_work">My work</string>
+    <string name="todo">TODO</string>
+    <string name="arrow5">arrow5</string>
+    <string name="buttom" />
+    <string name="arrow" />
+    <string name="imageview">TODO</string>
+    <string name="image_pullrequest">pullrequest</string>
+    <string name="image_discussions">discussions</string>
+    <string name="image_repositories">repositories</string>
+    <string name="organizationsview">organizationsview</string>
+    <string name="starredview">starredview</string>
+    <string name="bissues">bissues</string>
 </resources>
