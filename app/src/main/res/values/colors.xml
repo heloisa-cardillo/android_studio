@@ -8,5 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#BDBDBD</color>
+    <color name="black2">#202020</color>
+    <color name="buttom1">#24CE85</color>
+    <color name="buttom2">#2CBDFB</color>
+    <color name="buttom3">#A160FB</color>
+    <color name="buttom4">#3F434A</color>
+    <color name="buttom5">#FD7366</color>
+    <color name="buttom6">#FFB84E</color>
+    <color name="lignes">#50555C</color>
+
 
 </resources>
