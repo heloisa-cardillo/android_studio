@@ -56,13 +56,8 @@ class HomeFragment : Fragment() {
 
         var cheviche:Comida= Comida("cheviche","acido",30,"Peru")
         Log.d("heloisa","nome da comida: ${cheviche.nome}")
-        var tacos:Comida= Comida("tacos","picante",40,"Mexico")
+        var tacos:Comida= Comida("tacos","picante",45,"Mexico")
         Log.d("heloisa","nome da comida: ${tacos.nome}")
-
-
-
-
-
 
         var starredContainer= view.findViewById<View>(R.id.starred_container)
         starredContainer.setOnClickListener {
