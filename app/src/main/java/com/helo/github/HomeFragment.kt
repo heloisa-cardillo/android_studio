@@ -32,11 +32,38 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d("heloisa","onviewcreated")
-        var palavra: String="View Created"
-        var numeroInteiro: Int=0
-        var numeroQuebrado: Double=0.0
-        var numeroQebrado2: Float=0f
-        var boleano: Boolean=true
+
+        var jose:Coelho=Coelho("branco","vermelho","preta","jose")
+        var dani:Coelho= Coelho("marrom e branco","marrom","marrom","dani")
+        Log.d("heloisa","nome do coelho: ${jose.nomecoelho}")
+        Log.d("heloisa","nome do coelho: ${dani.nomecoelho}")
+
+        var racao:Alimentos= Alimentos("racao","marrom","300gramas")
+        var verdura:Alimentos=Alimentos("verduras","verde","500gramas")
+        Log.d("heloisa","nome do alimento: ${racao.nomealimento}")
+        Log.d("heloisa","nome do alimento: ${verdura.nomealimento}")
+
+
+        var segunda:Julius= Julius(45,30,"segunda feira")
+        var quarta:Julius= Julius(46,40,"quarta feira")
+        Log.d("heloisa","rotina Julius: ${segunda.diadasemana}")
+        Log.d("heloisa","rotina Julius: ${quarta.diadasemana}")
+
+        var lavarroupa:HouseWork= HouseWork("heloisa","lavar roupa",1,"amaciante e sabao")
+        var estenderoupa:HouseWork= HouseWork("lucas","estender roupa",2,"pregadores")
+        Log.d("heloisa","tarefa: ${lavarroupa.tarefa}")
+        Log.d("heloisa","tarefa: ${estenderoupa.tarefa}")
+
+        var cheviche:Comida= Comida("cheviche","acido",30,"Peru")
+        Log.d("heloisa","nome da comida: ${cheviche.nome}")
+        var tacos:Comida= Comida("tacos","picante",40,"Mexico")
+        Log.d("heloisa","nome da comida: ${tacos.nome}")
+
+
+
+
+
+
         var starredContainer= view.findViewById<View>(R.id.starred_container)
         starredContainer.setOnClickListener {
             Log.d("heloisa", "cliquei_starred")
