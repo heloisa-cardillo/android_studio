@@ -64,7 +64,11 @@
         android:background="@drawable/blacksquare">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:id="@+id/issues_container"
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:id="@+id/bissues"
                 android:layout_width="24dp"
@@ -82,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:text="Issues"
+                android:text="@string/Issues"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:textSize="16sp"
@@ -108,7 +112,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/pullrequest_container"
+            android:focusable="true">
             <ImageView
                 android:id="@+id/bpullrequest"
                 android:layout_width="24dp"
@@ -152,7 +160,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/discussions_container"
+            android:focusable="true">
             <ImageView
                 android:id="@+id/bdiscussions"
                 android:layout_width="24dp"
@@ -195,7 +207,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/repositories_container"
+            android:focusable="true">
             <ImageView
                 android:id="@+id/brepositories"
                 android:layout_width="24dp"
@@ -238,7 +254,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/organizations_container"
+            android:focusable="true">
             <ImageView
                 android:id="@+id/borganizations"
                 android:layout_width="24dp"
@@ -281,7 +301,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/starred_container"
+            android:focusable="true">
             <ImageView
                 android:id="@+id/bstarred"
                 android:layout_width="24dp"
